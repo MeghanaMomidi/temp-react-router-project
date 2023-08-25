@@ -4,10 +4,10 @@ export default function SearchForm() {
   const { setSearchTerm } = useGlobalContext()
   const searchValue = React.useRef('')
 
-  React.useEffect(() => {
+  React.useEffect(() => { 
     searchValue.current.focus()
   }, [])
-
+ 
   function searchCocktail() {
     setSearchTerm(searchValue.current.value)
   }
